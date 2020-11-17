@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+#Function to read the contents of csv file.
 def read_employees(csv_file_location):
         csv.register_dialect('empDialect',skipinitialspace=True, strict=True)
         employee_file = csv.DictReader(open(csv_file_location), dialect = 'empDialect')
@@ -10,6 +11,7 @@ def read_employees(csv_file_location):
 # Initialising employee list from the csv file.
 employee_list = read_employees('C:\\Users\\Meena Natarajan\\Documents\\Python\\employees.csv')
 
+#Function to process data.
 def process_data(employee_list):
         department_list = []
         for employee_data in employee_list:
