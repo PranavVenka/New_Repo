@@ -7,7 +7,7 @@ def read_employees(csv_file_location):
         for data in employee_file:
                 employee_list.append(data)
         return employee_list
-
+# Initialising employee list from the csv file.
 employee_list = read_employees('C:\\Users\\Meena Natarajan\\Documents\\Python\\employees.csv')
 
 def process_data(employee_list):
