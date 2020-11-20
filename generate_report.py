@@ -21,6 +21,7 @@ def process_data(employee_list):
 
 dictionary = process_data(employee_list)
 
+#Defining method to write report to a separate text file
 def write_report(dictionary, report_file):
         with open(report_file, "w+") as file:
                 for k in sorted(dictionary):
